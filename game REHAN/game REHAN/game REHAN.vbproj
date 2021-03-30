@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8CEEC231-32EC-4E1B-96FB-F004CC62EF10}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>game2.My.MyApplication</StartupObject>
+    <RootNamespace>game2</RootNamespace>
+    <AssemblyName>game REHAN</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>game REHAN.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>game REHAN.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Excalibur-fantasy-weapons-4278339-800-600.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\멋진-사무라이-검-katana-열쇠-고리-keyring-pandent-japanes-애니메이션-만화-3-9-.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Assassin-s-Creed-III-3-Connor-Kenway-DELUXE-PU-Axe-SAME-DAY-SHIPPING-Tomahawk-font-b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sword_of_omens_by_ricardocoutinho-d496mgd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\120px-Dark_Artistry_Tornado_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\286585-small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2603988_razor_eye_of_the_storm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dota_IMBA_LAGOONA_BLAZE_IT_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arena_Battle_Background.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5460c8f00ab38c43c030ebd59c3f546f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bvnv.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jghjh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kjbjb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kjhjk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Padded_Armor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eluci Dator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perisai.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eluci Dator1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Orang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asdasd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sword1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Players.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\44edf9dd3699febdc0c5183afcf5a025.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\44edf9dd3699febdc0c5183afcf5a025.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\merah-bintang-clip-art-vektor-gratis-download-241346.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\181717-full.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\esports_dota-2_quai-rung_Satyr-Tormenter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dcn1adwq0ws.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pedang 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kopblack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adadadw.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black powerpoint background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adfafaf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wood-grain-texture-textured-wallpaper-dark-collection-images-textures-wallpapers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next-icon-2970.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eac5bd725ea8ac89a034fa6539d7e758.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
